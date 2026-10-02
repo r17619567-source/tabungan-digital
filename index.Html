@@ -1,0 +1,192 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabungan Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>💰 Tabungan Digital</h1>
+            <p>Kelola tabunganmu dengan mudah</p>
+        </header>
+
+
+        <!-- SALDO -->
+        <section class="saldo-card">
+            <p>Saldo Tabungan</p>
+
+            <h2 id="saldo">
+                Rp0
+            </h2>
+        </section>
+
+
+        <!-- FORM TRANSAKSI -->
+        <section class="form-card">
+
+            <h3>Transaksi</h3>
+
+            <form id="formTabungan">
+
+                <div class="input-group">
+
+                    <label for="nominal">
+                        Nominal
+                    </label>
+
+                    <input
+                        type="number"
+                        id="nominal"
+                        placeholder="Masukkan nominal"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="jenis">
+                        Jenis Transaksi
+                    </label>
+
+                    <select id="jenis" required>
+
+                        <option value="">
+                            -- Pilih Transaksi --
+                        </option>
+
+                        <option value="setor">
+                            💵 Setor Uang
+                        </option>
+
+                        <option value="tarik">
+                            💸 Tarik Uang
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="keterangan">
+                        Keterangan
+                    </label>
+
+                    <input
+                        type="text"
+                        id="keterangan"
+                        placeholder="Contoh: Menabung harian"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="btn-simpan">
+                    Simpan Transaksi
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- RINGKASAN -->
+        <section class="ringkasan">
+
+            <div class="box">
+                <span>Uang Masuk</span>
+                <strong id="totalMasuk">
+                    Rp0
+                </strong>
+            </div>
+
+            <div class="box">
+                <span>Uang Keluar</span>
+                <strong id="totalKeluar">
+                    Rp0
+                </strong>
+            </div>
+
+        </section>
+
+
+        <!-- RIWAYAT -->
+        <section class="riwayat-card">
+
+            <div class="judul-riwayat">
+
+                <h3>
+                    Riwayat Transaksi
+                </h3>
+
+                <button
+                    onclick="hapusSemua()"
+                    class="btn-hapus-semua"
+                >
+                    Hapus Semua
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Transaksi</th>
+                            <th>Nominal</th>
+                            <th>Keterangan</th>
+                            <th>Aksi</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="riwayat">
+
+                        <!-- Data transaksi ditampilkan melalui JavaScript -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © 2026 Tabungan Digital
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

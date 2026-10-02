@@ -1,0 +1,303 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #333;
+}
+
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+    background: #176b4d;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+/* SALDO */
+
+.saldo-card {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.saldo-card p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.saldo-card h2 {
+    color: #176b4d;
+    font-size: 35px;
+}
+
+
+/* FORM */
+
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-card h3 {
+    color: #176b4d;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #176b4d;
+}
+
+
+.btn-simpan {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    background: #176b4d;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.btn-simpan:hover {
+    background: #105239;
+}
+
+
+/* RINGKASAN */
+
+.ringkasan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.box span {
+    display: block;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+
+.box strong {
+    font-size: 22px;
+}
+
+
+/* RIWAYAT */
+
+.riwayat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.judul-riwayat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.judul-riwayat h3 {
+    color: #176b4d;
+}
+
+
+.btn-hapus-semua {
+    border: none;
+    background: #d9534f;
+    color: white;
+    padding: 9px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.btn-hapus-semua:hover {
+    background: #b52b27;
+}
+
+
+/* TABLE */
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+th {
+    background: #176b4d;
+    color: white;
+}
+
+
+tr:hover {
+    background: #f5f5f5;
+}
+
+
+/* STATUS */
+
+.masuk {
+    color: #16834b;
+    font-weight: bold;
+}
+
+
+.keluar {
+    color: #d64541;
+    font-weight: bold;
+}
+
+
+/* TOMBOL HAPUS */
+
+.btn-hapus {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.btn-hapus:hover {
+    background: #c0392b;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 25px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+        margin: 15px auto;
+    }
+
+
+    header h1 {
+        font-size: 25px;
+    }
+
+
+    .saldo-card h2 {
+        font-size: 27px;
+    }
+
+
+    .ringkasan {
+        grid-template-columns: 1fr;
+    }
+
+
+    .judul-riwayat {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
+    .btn-hapus-semua {
+        width: 100%;
+    }
+
+}
+```
